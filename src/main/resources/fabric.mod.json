@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betteradventuremode",
+	"version": "${version}",
+	"name": "Better Adventure Mode",
+	"description": "This is a mod for enhancing the adventureous Aspect of Minecraft",
+	"authors": [
+		"Infeso"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/betteradventuremode/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.infeso.betteradventuremode.BetterAdventureMode"
+		],
+		"client": [
+			"net.infeso.betteradventuremode.BetterAdventureModeClient"
+		],
+		"fabric-datagen": [
+			"net.infeso.betteradventuremode.BetterAdventureModeDataGenerator"
+		]
+	},
+	"mixins": [
+		"betteradventuremode.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
