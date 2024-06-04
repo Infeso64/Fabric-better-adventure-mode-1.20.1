@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all" : "betteradventuremode:block/raw_ruby_block"
+  }
+}

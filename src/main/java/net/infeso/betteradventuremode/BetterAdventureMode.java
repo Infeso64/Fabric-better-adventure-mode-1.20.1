@@ -2,6 +2,7 @@ package net.infeso.betteradventuremode;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.infeso.betteradventuremode.block.ModBlocks;
 import net.infeso.betteradventuremode.item.ModItemGroups;
 import net.infeso.betteradventuremode.item.ModItems;
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class BetterAdventureMode implements ModInitializer {
 	{
 		ModItems.registerModItem();
 		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 }
