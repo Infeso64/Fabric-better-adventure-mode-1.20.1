@@ -1,8 +1,4 @@
 {
-  "item.betteradventuremode.ruby": "Ruby",
-  "item.betteradventuremode.raw_ruby": "Raw Ruby",
-
-  "block.betteradventuremode.ruby_block": "Ruby Block",
-  "block.betteradventuremode.raw_ruby_block": "Raw Ruby block",
-  "itemgroup.ruby": "Rubys"
+  "block.betteradventuremode.base_marker": "Base Marker",
+  "itemgroup.name": "Better Adventuremode "
 }

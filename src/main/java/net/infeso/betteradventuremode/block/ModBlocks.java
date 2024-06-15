@@ -13,22 +13,20 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks
 {
-
-    public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).luminance(10)));
-    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK)));
-
+    public static final Block BASE_MARKER = registerBlock("base_marker",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
     public static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name,block);
-        return Registry.register(Registries.BLOCK, new Identifier(BetterAdventureMode.MOD_ID, name),block);
+        return Registry.register(Registries.BLOCK, new Identifier(BetterAdventureMode.MOD_ID,name),block);
     }
     public static Item registerBlockItem(String name, Block block)
     {
-        return Registry.register(Registries.ITEM, new Identifier(BetterAdventureMode.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
+        return Registry.register(Registries.ITEM, new Identifier(BetterAdventureMode.MOD_ID,name),
+                new BlockItem(block,new FabricItemSettings()));
     }
     public static void registerModBlocks()
     {
-        BetterAdventureMode.LOGGER.info("Registering Blocks for" + BetterAdventureMode.MOD_ID);
+        BetterAdventureMode.LOGGER.info("Registering ModBlocks for "+ BetterAdventureMode.MOD_ID);
     }
 }

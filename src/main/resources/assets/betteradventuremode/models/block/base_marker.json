@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all" : "betteradventuremode:block/ruby_block"
+    "all": "betteradventuremode:block/base_marker"
   }
 }
