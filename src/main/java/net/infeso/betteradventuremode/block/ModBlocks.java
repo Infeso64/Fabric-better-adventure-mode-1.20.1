@@ -3,6 +3,7 @@ package net.infeso.betteradventuremode.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.infeso.betteradventuremode.BetterAdventureMode;
+import net.infeso.betteradventuremode.block.custom.BaseMarkerBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -14,7 +15,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks
 {
     public static final Block BASE_MARKER = registerBlock("base_marker",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+            new BaseMarkerBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
     public static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name,block);
